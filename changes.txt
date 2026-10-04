@@ -1,0 +1,14 @@
+I added a start menu to the Godot tutorial. 
+It has a game title, a Start Game button, a How to Play button, and a Quit button.
+
+When the Start Game button is pressed, the game loads. 
+The How to Play button opens an instructions panel that explains the controls. 
+When the player presses Back, the instructions panel closes and the main menu appears again. 
+The Quit button closes the game.
+
+I used signals to make the buttons work. 
+The How to Play and Back buttons use show() and hide() to control the menu and instructions panel. 
+The Start Game button uses change_scene_to_file() to load the game, and the Quit button uses get_tree().quit() to close the game.
+
+I originally wanted to add a health system, but I could not get it to work properly. 
+So I decided to create a start menu instead. 
